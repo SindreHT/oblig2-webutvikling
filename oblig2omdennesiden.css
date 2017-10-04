@@ -1,0 +1,96 @@
+#master-grid 
+{
+	max-width: 1200px;
+	margin: 0 auto;
+			
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto auto auto 50px;
+	grid-template-areas: 	"header header"
+							"bilde1 bilde2"
+							"artikkel1 artikkel2"
+							"footer footer";
+}
+			
+header 
+{
+	grid-area: header;
+	background: coral;
+	text-align: center;
+	border: solid black;
+}
+h3,h4
+{
+	text-align: center;
+}
+
+p
+{
+	font-size: 16px;
+	margin: 0 auto;
+	max-width: 600px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+a
+{	
+	text-decoration: none;
+	color: green;
+}
+
+a:hover
+{
+	color: red;
+}
+a:visited
+{
+	color: coral;
+}
+nav
+{
+	grid-area: nav;
+}
+.farge
+{
+	background-color: yellow;
+}
+#bilde1
+{
+	grid-area: bilde1;
+	width: 600px;
+	height: 200px;
+	margin-right: 25px;
+}
+#bilde2
+{
+	grid-area: bilde2;
+	width: 550px;
+	height: 200px;
+	margin-left: 25px;
+}
+#artikkel
+{
+	grid-area: artikkel;
+}
+
+
+footer
+{
+	grid-area: footer;
+	background: #999999;
+	border: solid black;
+}
+#omdennesiden
+{
+	grid-area: footer;
+	margin-left: 500px;
+	font-size: 20px;
+}
+
+

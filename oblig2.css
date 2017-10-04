@@ -1,0 +1,133 @@
+#master-grid 
+{
+	max-width: 1200px;
+	margin: 0 auto;
+			
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 100px 220px auto 100px;
+	grid-template-areas: 	"header header header header"
+							"forelesning artikkel1 artikkel2 viktiginfo"
+							"artikkel3 artikkel4 artikkel5 linkarkiv"
+							"footer footer footer footer";
+}
+			
+header 
+{
+	grid-area: header;
+	background: coral;
+	text-align: center;
+	border: solid black;
+}
+h3,h4
+{
+	text-align: center;
+}
+a
+{
+	text-decoration: none;
+	margin-left: 90px;
+}
+#link
+{
+	color: black;
+}
+ul
+{
+	list-style-type: none;
+}
+#artikkel1 a:hover
+{
+	color: red;
+}
+#artikkel2 a:hover
+{
+	color: red;
+}
+#artikkel3 a:hover
+{
+	color: red;
+}
+#artikkel4 a:hover
+{
+	color: red;
+}
+#artikkel5 a:hover
+{
+	color: red;
+}
+a:visited
+{
+	color: green;
+}
+p
+{
+	text-align: center;
+	margin: 0;
+}
+#forelesning
+{
+	overflow: scroll;
+}
+#timeplan
+{
+	grid-area: forelesning;
+	width: 350px;
+	height: 150px;
+}
+#artikkel1
+{
+	grid-area: artikkel1;
+	border: thin solid black;
+}
+#artikkel2
+{
+	grid-area: artikkel2;
+	border: thin solid black;
+}
+#artikkel3
+{
+	grid-area: artikkel3;
+	border: thin solid black;
+}
+#artikkel4
+{
+	grid-area: artikkel4;
+	border: thin solid black;
+}
+#artikkel5
+{
+	grid-area: artikkel5;
+	border: thin solid black;
+}
+#viktiginfo
+{
+	grid-area: viktiginfo;
+	background: red;
+	border: thin solid black;
+}
+#linkarkiv
+{
+	grid-area: linkarkiv;
+	background: red;
+	border: thin solid black;
+	
+}
+footer
+{
+	padding: 30px;
+	grid-area: footer;
+	background: #999999;
+	border: solid black;
+}
+#omdennesiden
+{
+	grid-area: footer;
+	margin-left: 500px;
+	font-size: 20px;
+}
+
+
+
+
+

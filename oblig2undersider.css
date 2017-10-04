@@ -1,0 +1,80 @@
+#master-grid 
+{
+	max-width: 1200px;
+	margin: 0 auto;
+			
+	display: grid;
+	grid-template-columns: 200px 1fr;
+	grid-template-rows: auto auto 50px;
+	grid-template-areas: 	"header header"
+							"nav artikkel"
+							"footer footer";
+}
+			
+header 
+{
+	grid-area: header;
+	background: coral;
+	text-align: center;
+	border: solid black;
+}
+h3,h4
+{
+	text-align: center;
+}
+
+p
+{
+	font-size: 20px;
+	margin: 0 auto;
+	max-width: 600px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+a
+{	
+	text-decoration: none;
+	color: green;
+}
+
+a:hover
+{
+	color: red;
+}
+a:visited
+{
+	color: coral;
+}
+nav
+{
+	grid-area: nav;
+}
+img
+{
+	margin-right: 40px;
+	margin-left: 50px;
+	height: 200px;
+	width: 400px;
+}
+#artikkel
+{
+	grid-area: artikkel;
+}
+
+
+footer
+{
+	grid-area: footer;
+	background: #999999;
+	border: solid black;
+}
+
+
+
+
